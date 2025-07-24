@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>Manuscript Submission Form</h2>
+        <form action="/url-where-you-want-to-submit-form-data">
+        
+          <!--Authors-->
+         <fieldset>
+              <legend>
+                Name of Author(s)
+              </legend>
+              <label for="first-name"> First Name : </label><!--note the for attribute value is same to id of input element, this will associate the label with control item automatically-->
+                  <input type="text" id="first-name" name="first-name"placeholder="first name" required></br>
+               <!--Note that input elements are self-closing. and the required attribute will be used for validation of empty text-->
+               <label for="middle-name"> Middle Name : </label>
+                 <input type="text" id="middle-name" name="middle-name"placeholder="father name" required></br>
+               <label for="last-name"> Last Name : </label>
+                 <input type="text" id="last-name" name="last-name" placeholder="Grand father name" required></br>
+             <label for="institution"> Institution: </label>
+                 <input type="textarea" id="institution" name="institution" placeholder="institution" required></br>
+           
+                </fieldset>
+            <!--Date of Birth-->
+            <fieldset>
+              <legend>
+                Date of Birth (European Calender)
+              </legend>
+              <label for="date-of-birth"> DoB: </label>
+                  <input type="datetime" id="date-of-birth" name="date-of-birth" placeholder="date of bith" required></br>
+                  <!--Radio Button and groups-->
+                    <fieldset>
+                      <legend>
+                        Gender 
+                      </legend>
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="male"> Male</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="male"> Female</label>                              
+                    </fieldset>
+
+                   <!--Contact Address-->
+                   <fieldset>
+                    <legend>
+                      Contact Address
+                    </legend>
+                    <address>
+                            <label for="country"> Country: </label>
+                                <input type="text" id="country" name="country" placeholder="country " required></br>
+                     <label for="mobile"> cell phone: </label>
+                        <input type="text" id="mobile" name="mobile" placeholder="mobile " required></br>
+                    <label for="telophone"> Tel.: </label>
+                        <input type="text" id="telophone" name="telophone" placeholder="telophone" required></br>
+                    <label for="post-code"> P.o.box : </label>
+                        <input type="text" id="post-code" name="post-code" placeholder="post-code" required></br>
+                    <label for="email"> email : </label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required></br>
+                    <label for="fax"> Fax : </label>
+                        <input type="text" id="fax" name="fax" placeholder="fax" required></br>
+                      </address>                      
+                  </fieldset>
+            <button>Add Co-author</button></br>
+               <table><thead>List of authors in the table</thead></table>
+               <fieldset>
+                <legend>
+                  Submit artcle for :
+                </legend>
+              <input type="radio" id="proceeding" value="proceeding" name="publication">
+              <label for="male"> Proceedings</label></br>
+              <input type="radio" id="journal" value="journal" name="publication">
+              <label for="male"> Journal(Ethiop.Vet.J)</label>                              
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Attach the Manuscript  :
+                </legend>
+                <label for="manuscript-title"> Manuscript title :</label>
+              <input type="text" id="manuscript-title" value="" name="manuscript-title" placeholder="manuscript-title"><br>
+              <label for="manuscript-title"> Abstract :</label>
+              <input type="text" id="abstract" value="" name="abstract" placeholder="abstract"><br>
+              <label for="manuscript-title"> the full Article (word document):</label>
+              <input type="text" id="manuscript-title" value="" name="manuscript-title" placeholder="manuscript-title"><button>Browse</button>  <br>                       
+              </fieldset>
+               <fieldset>
+                <legend>
+                    If submitted Manuscript is for journal, the column proposed is for(choose only one)
+                </legend>
+              <input type="checkbox" id="regular" value="regular" name="membership-type">
+              <label for="male"> Origional articles</label> </br>
+              <input type="checkbox" id="cooperative" value="cooperative" name="membership-type">
+              <label for="male"> Review and future article</label></br> 
+              <input type="checkbox" id="lifetime" value="lifetime" name="membership-type">
+              <label for="male"> Short Communication, Clinical/Case reports</label> </br>
+             </fieldset>  
+
+                <fieldset>
+                  <legend>
+                    Terms and Conditions
+                  </legend>
+                  <p>I have carefully read the copyright and guide of submission and i fully agree to rules and rights stated in the publication guideline.
+                  </p>
+                <input type="checkbox" id="agree" value="agree" name="agree">
+                <label for="male">I  Agree to <a href="#">copy right transfer form</a></label> </br>                                           
+                </fieldset>                       
+         
+         <p>Captcha</p>
+             <input type="submit" name="submit" value="Submit">
+        </form>
+        
+
+
+    </main>
+</body>
+</html>
